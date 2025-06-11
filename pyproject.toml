@@ -1,0 +1,24 @@
+[project]
+    name = "hdf5_to_text_table"
+    version = "1.0.0"
+    authors = [{name="Robert Glas", email="78153815+rmglas@users.noreply.github.com"}]
+    description = "This little script helps you convert data from a HDF5 file into a table in text format."
+    keywords = ["HDF5", "text", "table"]
+    readme = "README"
+    license = {file = "LICENSE"}
+    dependencies = ["h5py", "numpy"]
+    requires-python = ">=3.8"
+
+[project.urls]
+    Repository = "https://github.com/rmglas/hdf5_to_text_table"
+
+[project.scripts]
+    hdf5_to_text_table = "hdf5_to_text_table:main"
+
+[build-system]
+    requires = ["setuptools >= 61.0"]
+    build-backend = "setuptools.build_meta"
+
+[tool.black]
+    line-length = 79
+    required-version = "22.6.0"
